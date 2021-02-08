@@ -1,7 +1,6 @@
 const http = require("http");
 const redis = require('redis');
 const UAParser = require('ua-parser-js');
-const client = redis.createClient();
 
 http.createServer((req, res) => {
   res.setHeader("Content-Type", "application/json");
@@ -12,10 +11,11 @@ http.createServer((req, res) => {
   }
 
   if(req.url === '/user') {
+    const client = redis.createClient();
     client.on("error", function(error) {
       console.error(error);
     });
-  if(req.method === "POST") {
+    if(req.method === "POST") {
       const parser = new UAParser();
       const ua = req.headers['user-agent'];
       const browserName = parser.setUA(ua).getBrowser().name;
@@ -30,14 +30,11 @@ http.createServer((req, res) => {
       }).on('end', () => {
         res.end(JSON.stringify({success: true, browser: browserName}));
       });
-  }
-  if(req.method === "GET") {
-    client.get('browser', () => {
-      res.end(JSON.stringify({success: true, browser: res}));
-    })
+    }
+    if(req.method === "GET") {
+      client.get('browser', (err, reply) => {
+        res.end(JSON.stringify({success: true, browser: reply.toString()}));
+      });
     }
   }
 }).listen(+process.env.PORT || 5000);
-
-
-
