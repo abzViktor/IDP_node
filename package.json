@@ -17,6 +17,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "query-string": "^6.13.8",
     "redis": "^3.0.2",
     "sequelize": "^6.3.5",
     "ua-parser-js": "^0.7.23"

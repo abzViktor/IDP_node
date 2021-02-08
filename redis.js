@@ -5,7 +5,7 @@ export const setToRedis = (key, value) => {
   return new Promise((resolve, reject) => {
     client.set(key, value, (err, reply) => {
       if(err) {
-        reject();
+        reject(err);
       }
       resolve();
     })

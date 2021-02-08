@@ -1,37 +1,40 @@
-import UAParser from 'ua-parser-js';
-import express from 'express';
-import cors from 'cors';
-const app = express();
 import {getFromRedis, setToRedis} from "./redis.js";
+import http from "http";
+import url from 'url';
+import UAParser from 'ua-parser-js';
 
-app.use(cors());
+http.createServer((req, res) => {
+  res.setHeader("Content-Type", "application/json");
+  res.setHeader("Access-Control-Allow-Origin", "*");
 
-app.get('/version', (req, res) => {
-  res.send(JSON.stringify({version: process.version}));
-});
-
-app.post('/user', (req, res) => {
-  const parser = new UAParser();
-  const ua = req.headers['user-agent'];
-  const browserName = parser.setUA(ua).getBrowser().name;
-
-  setToRedis('browser', browserName).then(() => {
-    res.send(JSON.stringify({success: true, browser: browserName}));
-  }).catch((err) => {
-    res.send(JSON.stringify({success: false, error: err}))
-  })
-});
-
-app.get('/user', (req, res) => {
-  getFromRedis('browser').then((data) => {
-    res.send(JSON.stringify({success: true, browser: data.toString()}));
-  })
-});
-
-app.listen(+process.env.PORT || 5000, () => {
-  console.log("Server started");
-});
-
-
+  const query = url.parse(req.url, true).query;
+  switch (req.url.split('?')[0]) {
+    case '/version':
+      res.end(JSON.stringify({version: process.version}));
+      break;
+    case '/user':
+      const uid = query.uid;
+      if(req.method === "POST") {
+        const parser = new UAParser();
+        const ua = req.headers['user-agent'];
+        const browserName = parser.setUA(ua).getBrowser().name;
+        console.log(uid);
+        setToRedis(uid, JSON.stringify({browser: browserName})).then(() => {
+          res.end(JSON.stringify({success: true, browser: browserName}));
+        }).catch((err) => {
+          res.end(JSON.stringify({success: false, error: err}))
+        })
+      }
+      if(req.method === "GET") {
+        getFromRedis(uid).then((data) => {
+          const browserName = JSON.parse(data).browser;
+          res.end(JSON.stringify({success: true, browser: browserName}));
+        }).catch((err) => {
+          res.end(JSON.stringify({success: false, error: err}));
+        })
+      }
+  }
+}).listen(+process.env.PORT || 5000);
+console.log('Node server running on port 3000');
 
 
