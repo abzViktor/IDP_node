@@ -1,53 +1,37 @@
-const http = require("http");
-const redis = require('redis');
-const UAParser = require('ua-parser-js');
+import UAParser from 'ua-parser-js';
+import express from 'express';
+import cors from 'cors';
+const app = express();
+import {getFromRedis, setToRedis} from "./redis.js";
 
-http.createServer((req, res) => {
-  res.setHeader("Content-Type", "application/json");
-  res.setHeader("Access-Control-Allow-Origin", "*");
+app.use(cors());
 
-  if(req.url === "/version"){
-    res.end(JSON.stringify({version: process.version}));
-  }
+app.get('/version', (req, res) => {
+  res.send(JSON.stringify({version: process.version}));
+});
 
-  if(req.url === '/user') {
-    const client = redis.createClient();
-    client.on("error", function(error) {
-      console.error(error);
-    });
-    if(req.method === "POST") {
-      const parser = new UAParser();
-      const ua = req.headers['user-agent'];
-      const browserName = parser.setUA(ua).getBrowser().name;
-      req.on('error', (err) => {
-        console.error(err);
-      }).on('data', () => {
-        client.set('browser', browserName, (err) => {
-          if(err) {
-            res.end(JSON.stringify({success: false, browser: err}));
-          }
-        });
-      }).on('end', () => {
-        res.end(JSON.stringify({success: true, browser: browserName}));
-      });
-    }
-    if(req.method === "GET") {
-      const getFromRedis = (key) => {
-        return new Promise((resolve, reject) => {
-          client.get(key, (err, reply) => {
-            if(err) {
-              reject();
-            }
-            resolve(reply);
-          })
-        })
-      }
-      getFromRedis('browser').then((data) => {
-        res.end(JSON.stringify({success: true, browser: data.toString()}))
-      })
-    }
-  }
-}).listen(+process.env.PORT || 5000);
+app.post('/user', (req, res) => {
+  const parser = new UAParser();
+  const ua = req.headers['user-agent'];
+  const browserName = parser.setUA(ua).getBrowser().name;
+
+  setToRedis('browser', browserName).then(() => {
+    res.send(JSON.stringify({success: true, browser: browserName}));
+  }).catch((err) => {
+    res.send(JSON.stringify({success: false, error: err}))
+  })
+});
+
+app.get('/user', (req, res) => {
+  getFromRedis('browser').then((data) => {
+    res.send(JSON.stringify({success: true, browser: data.toString()}));
+  })
+});
+
+app.listen(+process.env.PORT || 5000, () => {
+  console.log("Server started");
+});
+
 
 
 

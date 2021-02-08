@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js -p $PORT"
   },
+  "type": "module",
   "author": "",
   "license": "ISC",
   "engines": {
@@ -14,6 +15,8 @@
     "npm": "6.14.8"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "redis": "^3.0.2",
     "sequelize": "^6.3.5",
     "ua-parser-js": "^0.7.23"
