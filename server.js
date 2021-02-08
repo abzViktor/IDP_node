@@ -3,7 +3,7 @@ const redis = require('redis');
 const UAParser = require('ua-parser-js');
 const client = redis.createClient();
 
-http.createServer(async (req, res) => {
+http.createServer((req, res) => {
   res.setHeader("Content-Type", "application/json");
   res.setHeader("Access-Control-Allow-Origin", "*");
 
