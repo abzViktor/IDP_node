@@ -5,24 +5,13 @@ const UAParser = require('ua-parser-js');
 http.createServer((req, res) => {
   res.setHeader("Content-Type", "application/json");
   res.setHeader("Access-Control-Allow-Origin", "*");
-  const client = redis.createClient();
-
-  const getFromRedis = (key) => {
-    return new Promise((resolve, reject) => {
-      client.get(key, (err, reply) => {
-        if(err) {
-          reject();
-        }
-        resolve(reply);
-      })
-    })
-  }
 
   if(req.url === "/version"){
     res.end(JSON.stringify({version: process.version}));
   }
 
   if(req.url === '/user') {
+    const client = redis.createClient();
     client.on("error", function(error) {
       console.error(error);
     });
@@ -43,6 +32,16 @@ http.createServer((req, res) => {
       });
     }
     if(req.method === "GET") {
+      const getFromRedis = (key) => {
+        return new Promise((resolve, reject) => {
+          client.get(key, (err, reply) => {
+            if(err) {
+              reject();
+            }
+            resolve(reply);
+          })
+        })
+      }
       getFromRedis('browser').then((data) => {
         res.end(JSON.stringify({success: true, browser: data.toString()}))
       })
