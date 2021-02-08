@@ -32,18 +32,9 @@ http.createServer(async (req, res) => {
       });
   }
   if(req.method === "GET") {
-    const getFromRedis = (key) => {
-      return new Promise((resolve, reject) => {
-        client.get(key, (err, reply) => {
-          if(err) {
-            reject(err);
-          }
-          resolve(reply);
-        });
-      })
-    }
-      const res = await getFromRedis('browser');
+    client.get('browser', () => {
       res.end(JSON.stringify({success: true, browser: res}));
+    })
     }
   }
 }).listen(+process.env.PORT || 5000);
