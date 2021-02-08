@@ -1,11 +1,22 @@
 const http = require("http");
 const redis = require('redis');
 const UAParser = require('ua-parser-js');
-const client = redis.createClient();
 
 http.createServer((req, res) => {
   res.setHeader("Content-Type", "application/json");
   res.setHeader("Access-Control-Allow-Origin", "*");
+  const client = redis.createClient();
+
+  const getFromRedis = (key) => {
+    return new Promise((resolve, reject) => {
+      client.get(key, (err, reply) => {
+        if(err) {
+          reject();
+        }
+        resolve(reply);
+      })
+    })
+  }
 
   if(req.url === "/version"){
     res.end(JSON.stringify({version: process.version}));
@@ -40,13 +51,4 @@ http.createServer((req, res) => {
 }).listen(+process.env.PORT || 5000);
 
 
-const getFromRedis = (key) => {
-  return new Promise((resolve, reject) => {
-    client.get(key, (err, reply) => {
-      if(err) {
-        reject();
-      }
-      resolve(reply);
-    })
-  })
-}
+

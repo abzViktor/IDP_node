@@ -10,7 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d221009-bad8-42f5-9a14-4c3b9ccf0178" name="Default Changelist" comment="" />
+    <list default="true" id="1d221009-bad8-42f5-9a14-4c3b9ccf0178" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +49,7 @@
       <workItem from="1610958314046" duration="1289000" />
       <workItem from="1612009671007" duration="616000" />
       <workItem from="1612766698500" duration="1160000" />
-      <workItem from="1612801939906" duration="291000" />
+      <workItem from="1612801939906" duration="754000" />
     </task>
     <servers />
   </component>
@@ -65,5 +67,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3032" y="689" width="670" height="676" key="search.everywhere.popup" timestamp="1612802231672">
+      <screen x="1680" y="25" width="2560" height="1415" />
+    </state>
+    <state x="3032" y="689" width="670" height="676" key="search.everywhere.popup/0.25.1680.953/1680.25.2560.1415@1680.25.2560.1415" timestamp="1612802231672" />
   </component>
 </project>
