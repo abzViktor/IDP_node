@@ -1,5 +1,5 @@
 import * as redis from 'redis';
-const client = redis.createClient();
+const client = redis.createClient(process.env.REDIS_URL);
 
 export const setToRedis = (key, value) => {
   return new Promise((resolve, reject) => {
