@@ -5,9 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js -p $PORT"
+    "start": "node server.js -p $PORT",
+    "db:migrate": "sequelize-cli db:migrate"
   },
-  "type": "module",
   "author": "",
   "license": "ISC",
   "engines": {
@@ -17,9 +17,15 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
     "query-string": "^6.13.8",
     "redis": "^3.0.2",
-    "sequelize": "^6.3.5",
+    "sequelize": "^6.5.1",
+    "sequelize-cli": "^6.2.0",
     "ua-parser-js": "^0.7.23"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
   }
 }

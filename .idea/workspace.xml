@@ -11,10 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d221009-bad8-42f5-9a14-4c3b9ccf0178" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.sequelizerc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis.js" beforeDir="false" afterPath="$PROJECT_DIR$/redis.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,14 +26,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="1nEbgydawacvyAWOcCZ5e5lfB5W" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.15.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.35" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -54,6 +61,7 @@
       <workItem from="1612009671007" duration="616000" />
       <workItem from="1612766698500" duration="1160000" />
       <workItem from="1612801939906" duration="2754000" />
+      <workItem from="1616337226799" duration="6936000" />
     </task>
     <servers />
   </component>
@@ -73,6 +81,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="739" y="236" key="#Notifications" timestamp="1616340561963">
+      <screen x="0" y="25" width="1440" height="803" />
+    </state>
+    <state x="739" y="236" key="#Notifications/0.25.1440.803@0.25.1440.803" timestamp="1616340561963" />
+    <state x="377" y="278" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616338392081">
+      <screen x="0" y="25" width="1440" height="803" />
+    </state>
+    <state x="377" y="278" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.803@0.25.1440.803" timestamp="1616338392081" />
     <state x="3032" y="689" width="670" height="676" key="search.everywhere.popup" timestamp="1612802231672">
       <screen x="1680" y="25" width="2560" height="1415" />
     </state>

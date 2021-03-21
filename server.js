@@ -1,7 +1,7 @@
-import {getFromRedis, setToRedis} from "./redis.js";
-import http from "http";
-import url from 'url';
-import UAParser from 'ua-parser-js';
+const {getFromRedis, setToRedis} = require("./redis.js");
+const http = require("http");
+const url = require('url');
+const UAParser = require('ua-parser-js');
 
 http.createServer((req, res) => {
   res.setHeader("Content-Type", "application/json");
@@ -35,6 +35,5 @@ http.createServer((req, res) => {
       }
   }
 }).listen(+process.env.PORT || 5000);
-console.log('Node server running on port 3000');
 
 
