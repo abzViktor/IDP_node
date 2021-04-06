@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   };
   Statistics.init({
     date: DataTypes.DATE,
-    stats: DataTypes.JSON
+    stat: DataTypes.JSON
   }, {
     sequelize,
     modelName: 'Statistics',

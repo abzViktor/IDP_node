@@ -11,8 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d221009-bad8-42f5-9a14-4c3b9ccf0178" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/database/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/config/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/models/statistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/models/statistics.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +58,7 @@
       <workItem from="1612801939906" duration="2754000" />
       <workItem from="1616337226799" duration="8801000" />
       <workItem from="1616513643685" duration="1300000" />
-      <workItem from="1617723718503" duration="2674000" />
+      <workItem from="1617723718503" duration="2989000" />
     </task>
     <servers />
   </component>
