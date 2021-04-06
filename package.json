@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js -p $PORT",
-    "postbuild": "npm run db:migrate",
+    "heroku-postbuild": "npm run db:migrate",
     "db:migrate": "sequelize-cli db:migrate"
   },
   "author": "",
