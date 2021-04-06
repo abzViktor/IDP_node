@@ -11,12 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d221009-bad8-42f5-9a14-4c3b9ccf0178" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.sequelizerc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/config/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +58,9 @@
       <workItem from="1612009671007" duration="616000" />
       <workItem from="1612766698500" duration="1160000" />
       <workItem from="1612801939906" duration="2754000" />
-      <workItem from="1616337226799" duration="6936000" />
+      <workItem from="1616337226799" duration="8801000" />
+      <workItem from="1616513643685" duration="1300000" />
+      <workItem from="1617723718503" duration="1464000" />
     </task>
     <servers />
   </component>
@@ -89,6 +88,10 @@
       <screen x="0" y="25" width="1440" height="803" />
     </state>
     <state x="377" y="278" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.803@0.25.1440.803" timestamp="1616338392081" />
+    <state x="327" y="152" width="597" height="490" key="find.popup" timestamp="1616514288318">
+      <screen x="0" y="25" width="1440" height="803" />
+    </state>
+    <state x="327" y="152" width="597" height="490" key="find.popup/0.25.1440.803@0.25.1440.803" timestamp="1616514288318" />
     <state x="3032" y="689" width="670" height="676" key="search.everywhere.popup" timestamp="1612802231672">
       <screen x="1680" y="25" width="2560" height="1415" />
     </state>
