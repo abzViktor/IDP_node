@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const { DB_URL } = process.env.DATABASE_URL;
+const DB_URL = process.env.DATABASE_URL;
 
 module.exports = {
     url: DB_URL,
