@@ -3,6 +3,12 @@ require('dotenv').config();
 const DB_URL = process.env.DATABASE_URL;
 
 module.exports = {
+  development: {
+    host: "localhost",
+    dialect: 'postgres',
+    database: 'postgres'
+  },
+  production: {
     url: DB_URL,
     dialect: 'postgres',
     dialectOptions: {
@@ -11,4 +17,5 @@ module.exports = {
         rejectUnauthorized: false
       }
     }
+  }
 }

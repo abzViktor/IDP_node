@@ -11,7 +11,7 @@ module.exports = {
       date: {
         type: Sequelize.DATE
       },
-      statix: {
+      stat: {
         type: Sequelize.JSON
       },
       createdAt: {

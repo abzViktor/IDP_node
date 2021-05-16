@@ -11,7 +11,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d221009-bad8-42f5-9a14-4c3b9ccf0178" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tasks/browser_stats.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/db_connect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/stat.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/config/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/20210406175823-create-statistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/20210406175823-create-statistics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/20210418181749-update-browser-info.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/20210418182547-update-browser-info.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/models/browserinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/models/browserinfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/models/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redis.js" beforeDir="false" afterPath="$PROJECT_DIR$/redis.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +32,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -63,12 +77,26 @@
       <workItem from="1617717701017" duration="1129000" />
       <workItem from="1617795673630" duration="519000" />
       <workItem from="1617796363250" duration="7000" />
-      <workItem from="1618768886668" duration="2298000" />
+      <workItem from="1618768886668" duration="3834000" />
+      <workItem from="1619459807642" duration="4686000" />
+      <workItem from="1619534974678" duration="4917000" />
+      <workItem from="1619621683129" duration="5959000" />
+      <workItem from="1621187852043" duration="3528000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -91,6 +119,14 @@
       <screen x="0" y="25" width="1440" height="803" />
     </state>
     <state x="377" y="278" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.803@0.25.1440.803" timestamp="1616338392081" />
+    <state x="-2453" y="-128" width="1159" height="876" key="DiffContextDialog" timestamp="1618771849013">
+      <screen x="-2560" y="-228" width="2560" height="1415" />
+    </state>
+    <state x="-2453" y="-128" width="1159" height="876" key="DiffContextDialog/0.25.1440.799/-2560.-228.2560.1415@-2560.-228.2560.1415" timestamp="1618771849013" />
+    <state x="120" y="178" width="1240" height="599" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1621189835072">
+      <screen x="0" y="25" width="1440" height="799" />
+    </state>
+    <state x="120" y="178" width="1240" height="599" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.1440.799@0.25.1440.799" timestamp="1621189835072" />
     <state x="-1979" y="-4" width="1062" height="864" key="find.popup" timestamp="1617732612536">
       <screen x="-2560" y="-228" width="2560" height="1415" />
     </state>
