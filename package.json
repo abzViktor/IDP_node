@@ -26,9 +26,7 @@
     "redis": "^3.0.2",
     "sequelize": "^6.5.1",
     "sequelize-cli": "^6.2.0",
-    "ua-parser-js": "^0.7.23"
-  },
-  "devDependencies": {
+    "ua-parser-js": "^0.7.23",
     "dotenv": "^8.2.0"
   }
 }

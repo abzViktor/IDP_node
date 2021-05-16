@@ -1,30 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d221009-bad8-42f5-9a14-4c3b9ccf0178" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tasks/browser_stats.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/db_connect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/stat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/config/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/20210406175823-create-statistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/20210406175823-create-statistics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/20210418181749-update-browser-info.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/20210418182547-update-browser-info.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/models/browserinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/models/browserinfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis.js" beforeDir="false" afterPath="$PROJECT_DIR$/redis.js" afterDir="false" />
-    </list>
+    <list default="true" id="1d221009-bad8-42f5-9a14-4c3b9ccf0178" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +62,7 @@
       <workItem from="1619459807642" duration="4686000" />
       <workItem from="1619534974678" duration="4917000" />
       <workItem from="1619621683129" duration="5959000" />
-      <workItem from="1621187852043" duration="3528000" />
+      <workItem from="1621187852043" duration="4482000" />
     </task>
     <servers />
   </component>
@@ -101,6 +82,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/Users/trainee_abz/Desktop/IDP/Node/IDP_node/database/migrations" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -119,10 +125,11 @@
       <screen x="0" y="25" width="1440" height="803" />
     </state>
     <state x="377" y="278" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.803@0.25.1440.803" timestamp="1616338392081" />
-    <state x="-2453" y="-128" width="1159" height="876" key="DiffContextDialog" timestamp="1618771849013">
-      <screen x="-2560" y="-228" width="2560" height="1415" />
+    <state x="60" y="81" width="652" height="495" key="DiffContextDialog" timestamp="1621193041150">
+      <screen x="0" y="25" width="1440" height="799" />
     </state>
     <state x="-2453" y="-128" width="1159" height="876" key="DiffContextDialog/0.25.1440.799/-2560.-228.2560.1415@-2560.-228.2560.1415" timestamp="1618771849013" />
+    <state x="60" y="81" width="652" height="495" key="DiffContextDialog/0.25.1440.799@0.25.1440.799" timestamp="1621193041150" />
     <state x="120" y="178" width="1240" height="599" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1621189835072">
       <screen x="0" y="25" width="1440" height="799" />
     </state>
