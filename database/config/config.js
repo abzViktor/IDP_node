@@ -1,7 +1,8 @@
 require('dotenv').config();
 
 const DB_URL = process.env.DATABASE_URL;
-
+console.log("DB_URL");
+console.log(DB_URL);
 module.exports = {
   development: {
     host: "localhost",
