@@ -27,6 +27,7 @@ const exportStats = async () => {
 
 const getKey = async (key) => {
   const stat = await getFromRedis(key);
+  console.log(stat);
   dailyStat[JSON.parse(stat).browser] += 1;
 }
 

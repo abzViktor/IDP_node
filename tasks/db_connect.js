@@ -6,9 +6,12 @@ module.exports = {
   setStatsToDatabase: async (stats) => {
     console.log("Fired");
     try {
+      console.log(stat);
       const newStat = await stat.build({ date: Date.now(), stat: stats });
+      console.log(newStat);
       await newStat.save();
     } catch (e) {
+      console.log("ERR");
       console.log(e)
     }
   }
