@@ -10,9 +10,9 @@ const db = {};
 console.log(env);
 let sequelize;
 console.log(config);
-if (config.use_env_variable) {
+if (config.url) {
   console.log("!1");
-  sequelize = new Sequelize(process.env[config.use_env_variable], config);
+  sequelize = new Sequelize(process.env[config.url], config);
   console.log(sequelize);
 } else {
   console.log("!2");
