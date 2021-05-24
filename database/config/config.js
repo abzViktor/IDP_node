@@ -8,7 +8,7 @@ module.exports = {
     database: 'postgres'
   },
   production: {
-    url: DB_URL,
+    use_env_variable: DB_URL,
     dialect: 'postgres',
     dialectOptions: {
       ssl: {
