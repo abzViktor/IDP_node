@@ -14,7 +14,8 @@ module.exports = {
       ssl: {
         require: true,
         rejectUnauthorized: false
-      }
+      },
+      socketPath: DB_URL,
     }
   }
 }
