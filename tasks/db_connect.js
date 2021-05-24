@@ -1,11 +1,10 @@
-const { DataTypes } = require('sequelize');
-const { sequelize } = require('../database/models');
+const { Sequelize, DataTypes } = require('sequelize');
+const sequelize = new Sequelize(process.env.DATABASE_URL);
 const Statistics = require('../database/models/statistics.js');
 const stat = Statistics(sequelize, DataTypes);
 
 module.exports = {
   setStatsToDatabase: async (stats) => {
-    console.log("Fired");
     try {
       console.log(sequelize);
       const newStat = await stat.build({ date: Date.now(), stat: stats });
