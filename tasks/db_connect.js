@@ -1,5 +1,11 @@
 const { Sequelize, DataTypes } = require('sequelize');
-const sequelize = new Sequelize(process.env.DATABASE_URL);
+const sequelize = new Sequelize(process.env.DATABASE_URL, {
+  dialect: 'postgres',
+  protocol: 'postgres',
+  dialectOptions: {
+    ssl: true
+  }
+});
 const Statistics = require('../database/models/statistics.js');
 const stat = Statistics(sequelize, DataTypes);
 

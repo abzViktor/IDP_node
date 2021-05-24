@@ -5,9 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d221009-bad8-42f5-9a14-4c3b9ccf0178" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/tasks/db_connect.js" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/db_connect.js" afterDir="false" />
-    </list>
+    <list default="true" id="1d221009-bad8-42f5-9a14-4c3b9ccf0178" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +66,7 @@
       <workItem from="1621187852043" duration="8275000" />
       <workItem from="1621249972347" duration="1000" />
       <workItem from="1621261355791" duration="2333000" />
-      <workItem from="1621881185853" duration="3651000" />
+      <workItem from="1621881185853" duration="3990000" />
     </task>
     <servers />
   </component>
